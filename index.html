@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreshBite — Food for Every Mood</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <h1 class="logo">🍽️ FreshBite</h1>
+        <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+        <ul id="navLinks" class="nav-links">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-content container">
+        <p class="tag">Handcrafted meals • Fast delivery</p>
+        <h2>Delicious food, delivered warm and fresh.</h2>
+        <p>
+          Explore our chef-curated menu of healthy bowls, comfort classics, and
+          sweet treats.
+        </p>
+        <a href="#menu" class="btn">Order Now</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="menu" class="container section">
+        <h3>Popular Dishes</h3>
+        <div class="cards">
+          <article class="card">
+            <div class="emoji">🥗</div>
+            <h4>Green Power Bowl</h4>
+            <p>Quinoa, avocado, roasted veggies, and lemon tahini dressing.</p>
+            <span>$11.99</span>
+          </article>
+          <article class="card">
+            <div class="emoji">🍔</div>
+            <h4>Classic Smash Burger</h4>
+            <p>Double patty, cheddar, pickles, and our secret house sauce.</p>
+            <span>$9.49</span>
+          </article>
+          <article class="card">
+            <div class="emoji">🍝</div>
+            <h4>Creamy Pesto Pasta</h4>
+            <p>Fresh basil pesto with parmesan and toasted pine nuts.</p>
+            <span>$10.99</span>
+          </article>
+          <article class="card">
+            <div class="emoji">🍰</div>
+            <h4>Berry Cheesecake</h4>
+            <p>Silky cheesecake topped with seasonal berry compote.</p>
+            <span>$6.50</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section alt">
+        <div class="container about">
+          <div>
+            <h3>Why FreshBite?</h3>
+            <p>
+              We partner with local farms and trusted suppliers to bring you
+              vibrant ingredients and unforgettable flavor.
+            </p>
+            <ul>
+              <li>✅ Fresh ingredients sourced daily</li>
+              <li>✅ Vegetarian and high-protein options</li>
+              <li>✅ Delivery in under 30 minutes</li>
+            </ul>
+          </div>
+          <div class="about-highlight">
+            <p class="big">4.8★</p>
+            <p>Average customer rating from 3,000+ food lovers.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="container section contact">
+        <h3>Stay in the loop</h3>
+        <p>Get updates on new dishes and offers.</p>
+        <form id="subscribeForm">
+          <label for="email" class="sr-only">Email address</label>
+          <input id="email" type="email" placeholder="you@example.com" required />
+          <button type="submit">Subscribe</button>
+        </form>
+        <p id="message" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> FreshBite. Made with ❤️ for food lovers.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
